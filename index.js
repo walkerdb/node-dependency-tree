@@ -51,7 +51,7 @@ module.exports = function(options = {}) {
   }
 
   debug('final tree', tree);
-  return tree;
+  return { tree, 'visited': config.visited };
 };
 
 /**
